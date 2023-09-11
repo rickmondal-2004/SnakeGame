@@ -1,1 +1,10 @@
-
+The import statement imports the necessary modules: turtle, time, and random. The turtle module is used to create the graphics for the game, the time module is used to control the speed of the game, and the random module is used to generate random numbers for the position of the food.
+The window object is created using the turtle module. The bgcolor() method is used to set the background color of the window to black.
+The Snake_Head and Snake_Food objects are created using the turtle module. The shape() method is used to set the shape of the snake head to a circle and the food to a circle. The color() method is used to set the color of the snake head to beige and the food to green.
+The Move_Snake(), Food_Collision(), Border_Collision(), Body_Collision(), and Add_Snake_Body() functions are created. These functions are used to move the snake, check for food collision, border collision, body collision, and add a new body segment to the snake, respectively.
+The window.listen() method is used to listen for keyboard events. The window.onkeypress() method is used to bind the Up, Down, Left, and Right keys to the go_up(), go_down(), go_left(), and go_right() functions, respectively.
+The while True: loop is the game loop. This loop continuously runs until the snake dies.
+In the game loop, the window.update() method is used to update the screen. The Move_Snake() function is used to move the snake. The Food_Collision(), Border_Collision(), and Body_Collision() functions are used to check for food collision, border collision, and body collision, respectively.
+If the snake eats food, the score variable is incremented and the Add_Snake_Body() function is called to add a new body segment to the snake.
+If the snake collides with the border or its own body, the score variable is reset to 0 and the Snake_Head and queue variables are cleared.
+The window.mainloop() function keeps the window open until the user closes it.
